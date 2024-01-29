@@ -1,0 +1,30 @@
+/* Results section */
+.percentage-fill, 
+.percentage-num,
+.percentage-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3vh;
+}
+
+.percentage-fill {
+  background-color: #996BF9;
+}
+
+.percentage-num {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: white;
+  width: 98%;
+}
+
+.percentage-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+} 

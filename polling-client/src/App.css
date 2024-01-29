@@ -1,38 +1,73 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Logo section */
+.App-header {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 7%;
+  width: 50%;
+  margin-top: 1%;
+}
+
+.App-logo {
+  height: 100%;
+}
+
+
+/* Both results and poll */
+.App-poll {
+  height: 93%;
+  width: 20%;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.data-heading {
+  font-size: 5vh;
+  width: 100%;
   color: white;
+  margin: 2vh;
+  margin-bottom: 4vh;
 }
 
-.App-link {
-  color: #61dafb;
+.data-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.data-item {
+  position: relative;
+  margin-bottom: 3vh;
+  width: 100%;
+  height: 7vh;
+  border: solid 2px #FFFF;
+  border-radius: 5px;
+  background-color: rgba(153, 107, 249, 0.3);
+}
+
+.loading {
+  color: #996BF9;
+}
+
+/* Modifiers for mobile view. */
+@media only screen and (max-width: 1023px) {
+  .App-poll {
+    width: 75%;
   }
-  to {
-    transform: rotate(360deg);
+  .App-header {
+    margin-top: 3%;
   }
 }
